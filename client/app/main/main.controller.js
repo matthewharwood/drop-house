@@ -19,7 +19,16 @@ var app = angular.module('homeApp')
     getWeather();
     $interval(getWeather, 100000);
   });
-
+app.directive('zarniCam', function(){
+  return {
+    template: '<h4 class="label-1">24th</h4><iframe type="text/html" frameborder="0"  src="//video.nest.com/embedded/live/bRAvkP?autoplay=1" />'
+  };
+})
+app.directive('mattCam', function(){
+  return {
+    template: '<h4 class="label-2">Potrero</h4><iframe type="text/html" frameborder="0"  src="//video.nest.com/embedded/live/fzxVRs?autoplay=1" />'
+  };
+})
 app.directive("myCurrentTime", function(dateFilter){
     return function(scope, element, attrs){
         var format;
