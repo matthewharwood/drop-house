@@ -1,0 +1,137 @@
+
+/**
+ * App-wide Styles
+ */
+html, body {
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0;
+  margin:0;
+  height: 100%;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+	font-size: 100%;
+	background-color: #000;
+}
+* {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: inherit;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition:    all 0.2s ease;
+	-ms-transition:     all 0.2s ease;
+	-o-transition:      all 0.2s ease;
+	
+	position: relative;
+	
+}
+
+*, *:before, *:after {
+	position: relative;
+	box-sizing: inherit;
+}
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+  display: block;
+}
+figure {
+  position: relative;
+}
+figure img,
+figure object,
+figure embed,
+figure video {
+  max-width: 100%;
+  display: block;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 4.500em;
+}
+h2 {
+	font-size: 2.250em;
+}
+
+h3 {
+	font-size: 1.750em;
+}
+
+h4 {
+	font-size: 1.188em;
+	line-height: 1.875em;
+}
+p {
+	font-size: 1.188em;
+	line-height: 1.875em;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#page-container {
+	width: 100%;
+	height: 100%;
+}
+
+// Component styles are injected through grunt
+// injector
+@import 'account/login/login.scss';
+@import 'admin/admin.scss';
+@import 'main/main.scss';
+// endinjector
